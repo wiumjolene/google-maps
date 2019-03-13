@@ -47,5 +47,7 @@ while ($row = @mysqli_fetch_assoc($result)){
 }
 
 echo $dom->saveXML();
+$filePath = 'markers.xml';
+$dom->save($filePath); 
 
 ?>
